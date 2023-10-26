@@ -13,6 +13,7 @@ checkout scm
 stage('Build') {
 steps {
 echo "Build du projet"
+echo "test sami"
 
 // Ajoutez les commandes de build ici
 
