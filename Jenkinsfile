@@ -1,7 +1,8 @@
 pipeline {
 agent any
+tools {nodejs "nodejs"}
 triggers {
-pollSCM('*/5 * * * *') // Vérifier toutes les 5 minutes
+pollSCM('*/5 * * * *') 
 }
 stages {
 stage('Checkout') {
@@ -14,17 +15,14 @@ stage('Build') {
 steps {
 echo "Build du projet"
 echo "test sami"
-
-
-
-// Ajoutez les commandes de build ici
+sh "node app.js"
 
 }
 }
 stage('Deploy') {
 steps {
 echo "Déploiement du projet"
-sh "node app.js"
+
 }
 }
 }
