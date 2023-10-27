@@ -12,7 +12,7 @@ pipeline {
     stages {
         stage('Check Node.js') {
     steps {
-        sh 'node -v'
+     sh '/full/path/to/node -v'
     }
 }
         stage('Checkout') {
