@@ -15,13 +15,14 @@ stage('Build') {
 steps {
 echo "Build du projet"
 echo "test sami"
-sh "node app.js"
+sh "npm install"
 
 }
 }
 stage('Deploy') {
 steps {
 echo "Déploiement du projet"
+sh "node app.js"
 
 }
 }
