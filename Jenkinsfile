@@ -3,6 +3,7 @@ agent any
 triggers {
 pollSCM('*/5 * * * *') // Vérifier toutes les 5 minutes
 }
+ tools {nodejs "nodejs"}
 stages {
 stage('Checkout') {
 steps {
