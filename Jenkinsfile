@@ -3,7 +3,6 @@ agent any
 triggers {
 pollSCM('*/5 * * * *') // Vérifier toutes les 5 minutes
 }
- tools {nodejs "nodejs"}
 stages {
 stage('Checkout') {
 steps {
@@ -15,7 +14,6 @@ stage('Build') {
 steps {
 echo "Build du projet"
 echo "test sami"
-sh 'npm config ls'
 
 
 
