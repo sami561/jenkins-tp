@@ -8,11 +8,8 @@ pipeline {
     }
 
     stages {
-        stage('Check Node.js') {
-    steps {
-     sh '/full/path/to/node -v'
-    }
-}
+   
+
         stage('Checkout') {
             steps {
                 echo "Récupération du code source"
