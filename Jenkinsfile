@@ -14,7 +14,7 @@ stage('Build') {
 steps {
 echo "Build du projet"
 echo "test sami"
-node app.js
+
 
 
 // Ajoutez les commandes de build ici
@@ -24,7 +24,7 @@ node app.js
 stage('Deploy') {
 steps {
 echo "Déploiement du projet"
-// Ajoutez les commandes de déploiement ici
+sh "node app.js"
 }
 }
 }
