@@ -14,6 +14,7 @@ stage('Build') {
 steps {
 echo "Build du projet"
 echo "test sami"
+sh 'npm config ls'
 
 
 
