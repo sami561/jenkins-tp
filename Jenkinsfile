@@ -20,7 +20,7 @@ pipeline {
             steps {
                 echo "Build du projet"
                 echo "test sami"
-                sh "npm install"
+            
             }
         }
         stage('Deploy') {
