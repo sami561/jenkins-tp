@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        PATH = "$PATH:/usr/local/bin/node"
+       PATH = "$PATH:/usr/local/bin/node"
     }
 
     triggers {
@@ -10,6 +10,11 @@ pipeline {
     }
 
     stages {
+        stage('Check Node.js') {
+    steps {
+        sh 'node -v'
+    }
+}
         stage('Checkout') {
             steps {
                 echo "Récupération du code source"
