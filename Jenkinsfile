@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        PATH = "/usr/local/bin/node"
+        PATH = "$PATH:/usr/local/bin/node"
     }
 
     triggers {
